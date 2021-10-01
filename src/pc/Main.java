@@ -1,0 +1,17 @@
+package pc;
+
+public class Main {
+    public static void main(String[] args) {
+        Cola cola = new Cola();
+        System.out.println(cola.estaVacia());
+
+        for (int i = 0; i <= 5; i++) {
+            cola.insertar(i);
+        }
+        cola.mostrar();
+
+        cola.eliminar();
+        cola.eliminar();
+        cola.mostrar();
+    }
+}
